@@ -6,7 +6,7 @@ public class MinMax
 	public static void main(String args[])
 	{
 		
-		Check c = new Check();
+		Check c = new Check(); // object of class Check
 		c.getArray();
 		c.displayArray();
 		c.minmax();
@@ -18,10 +18,11 @@ public class MinMax
 class Check
 {
 	int i,max=0,min;
-	int a[]= new int[10];
-	Scanner input= new Scanner(System.in);
+	int a[]= new int[10];	//	Declaring array a
+	Scanner input= new Scanner(System.in);	
 	
 	
+	//method to input array elements from user
 	void getArray()
 	{
 		System.out.println("Enter array elements --->");
@@ -31,6 +32,7 @@ class Check
 		}
 	}
 
+	//method to check minimum and maximum array element
 	public void minmax()
 	{
 		min = a[0];
@@ -49,6 +51,8 @@ class Check
 		
 		System.out.println("Maximum number in array --->"+max);
 	}
+	
+	//method to display the array elements
 
 	void displayArray()
 	{
